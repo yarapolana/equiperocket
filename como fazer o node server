@@ -1,0 +1,16 @@
+instalar axios?
+
+instalar:
+- express - o que faz as chamadas ✓
+- sequelize - a banco de dados ✓
+- sequelize-cli - a base de dados ✓
+- nodemon - para poder assistir as mudanças do node ✓
+- sucrase - para poder usar import ✓
+- eslint, prettier, editorconfig - para ajudar a manter o codigo legível ✓
+- bcryptjs - para ecriptar o password ✓
+- jsonwebtoken - para criar um token e usalo para o login ✓
+- pg e pg-hstore - para validar e identificar o postgres ✓
+
+Base de dados
+- docker ps -a para verificar os bancos activos
+-

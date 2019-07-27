@@ -1,8 +1,15 @@
-import { Router } from "express";
+import { Router } from 'express';
 
-const routes = new Router(); //acho que é isso
+import UserController from './app/controllers/UserController';
 
-routes.get("/", (req, res) => {
-  return res.json({ mensagem: "Olá adorei isso aqui" });
+const routes = new Router();
+
+// Rota teste
+routes.get('/', (req, res) => {
+  return res.json({ mensagem: 'Olá adorei isso aqui' });
 });
+
+// Rota de criação de usuario
+routes.post('/users', UserController.store);
+
 export default routes;
