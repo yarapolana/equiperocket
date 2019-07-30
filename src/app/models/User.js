@@ -26,6 +26,7 @@ class User extends Model {
 
   checkPassword(password) {
     return bcrypt.compare(password, this.password_hash);
+    // compara a password de tentaiva com a password existente
   }
 }
 
