@@ -1,6 +1,5 @@
-instalar axios?
 
-instalar:
+Instalar:
 - express - o que faz as chamadas ✓
 - sequelize - a banco de dados ✓
 - sequelize-cli - a base de dados ✓
@@ -10,7 +9,15 @@ instalar:
 - bcryptjs - para ecriptar o password ✓
 - jsonwebtoken - para criar um token e usalo para o login ✓
 - pg e pg-hstore - para validar e identificar o postgres ✓
+- yup - para validar os dados do model ✓
 
-Base de dados
-- docker ps -a para verificar os bancos activos
--
+Base de dados:
+- docker ps -a para verificar os bancos activos ✓
+- docker start "nome sem aspas" - para verificar se a base de dados exemplo postgres esta a correr ✓
+- yarn sequelize --init - para iniciar a base de dados
+- yarn sequelize migration:create--name=create-users - para criar a tabela de dados no postgres/postbird
+- yarn sequelize db:migrate:undo - se tiver algum erro no ficheiro dos migrations
+
+Models:
+- definir os campos nome email e senha e fazer o addHook para encriptar a senha do usuario
+- 
